@@ -5,6 +5,7 @@ import { Hind_Madurai } from "next/font/google";
 import { poppins } from "@/shared-components/fonts/poppins";
 import { Briefcase } from "lucide-react";
 import Image from "next/image";
+import { FaHeart } from "react-icons/fa";
 
 const hindMadurai = Hind_Madurai({
   weight: "500",
@@ -194,11 +195,34 @@ const HeroCardSection = () => {
         <div ref={triggerRef4} className="w-full h-1" />
       </div>
 
-      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-end z-40 ">
+      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-end z-40 flex-col">
+        <div className="h-1/2 w-full">
+          <div className="mt-14 w-full h-full flex justify-between px-2">
+            <Image
+              src="/images/undraw/FIGMA_CARD_STARS.svg"
+              width={200}
+              height={200}
+              alt="stars"
+              className={`w-10 h-10 object-fit -ml-2 ${
+                trigger4Activated ? "show-card-icons" : "not-show-card-icons"
+              }`}
+            />
+
+            <Image
+              src="/images/undraw/FIGMA_CROWN.svg"
+              width={200}
+              height={200}
+              alt="stars"
+              className={`w-10 h-10 object-fit -mr-2 rotate-32 ${
+                trigger4Activated ? "show-card-icons" : "not-show-card-icons"
+              }`}
+            />
+          </div>
+        </div>
         <div className="h-1/2 w-full gradient"></div>
       </div>
 
-      <div className="w-1/2 h-full flex items-center justify-start flex-col gap-4 pr-8 py-6">
+      <div className="w-1/2 h-full flex items-center justify-start flex-col gap-4 pl-6 pr-8 py-6">
         {cards.left.map((p, index) => (
           <motion.div
             key={p.id}
@@ -252,10 +276,23 @@ const HeroCardSection = () => {
       </div>
       <div className="h-full w-[5px] bg-zinc-200 py-6">
         <div className="h-1/4 w-full flex justify-center items-center">
-          <div
-            className={`w-8 h-8 bg-zinc-500 rounded-full min-w-8 min-h-8 flex justify-center items-center text-white ${poppins.className}`}
-          >
-            1
+          <div className="relative w-8 h-8 min-w-8 min-h-8">
+            <FaHeart
+              className={`absolute inset-0 w-8 h-8 text-pink-600 transition-opacity transition-transform duration-300 ease-in-out ${
+                trigger4Activated
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-80 pointer-events-none"
+              }`}
+            />
+            <div
+              className={`absolute inset-0 rounded-full bg-zinc-500 text-white flex items-center justify-center transition-opacity transition-transform duration-300 ease-in-out ${
+                trigger4Activated
+                  ? "opacity-0 scale-120 pointer-events-none"
+                  : "opacity-100 scale-100"
+              }`}
+            >
+              1
+            </div>
           </div>
         </div>
         <div className="h-1/4 w-full flex justify-center items-center">
@@ -280,7 +317,7 @@ const HeroCardSection = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 h-full flex items-center justify-start flex-col gap-4 pl-8 py-6">
+      <div className="w-1/2 h-full flex items-center justify-start flex-col gap-4 pr-6 pl-8 py-6">
         {cards.right.map((p, index) => (
           <motion.div
             key={p.id}

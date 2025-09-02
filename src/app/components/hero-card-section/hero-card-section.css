@@ -35,3 +35,13 @@
     white 100%
   );
 }
+
+.show-card-icons {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.not-show-card-icons {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}

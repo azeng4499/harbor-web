@@ -18,7 +18,7 @@ const Story = () => {
           className={`w-full h-full flex flex-col gap-4 px-40 pt-10 text-[1.5rem] ${poppins.className}`}
         >
           <div
-            className={`${montserrat.className} text-zinc-900 mb-5 text-[2rem]`}
+            className={`${montserrat.className} text-zinc-800 mb-5 text-[2rem]`}
           >
             A new way to match
           </div>
@@ -98,8 +98,10 @@ const Story = () => {
               }`}
             >
               Instead of reducing people to a swipe, Harbor gives you a daily
-              curated list of people to rank. You prioritize who stands out,
-              they do the same, and genuine matches rise naturally to the top.
+              list of people to rank. You'll order each person based on interest
+              - and skip anyone who isn't you're vibe. Everyone else does the
+              same, and when there's mutual priority among rankings, Harbor
+              makes the match.
             </div>
           </Marker>
           <Marker
