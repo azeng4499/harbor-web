@@ -1,0 +1,37 @@
+.glow {
+  box-shadow: 0 0 20px rgba(113, 90, 255, 0.8), 0 0 40px rgba(113, 90, 255, 0.4),
+    0 0 60px rgba(113, 90, 255, 0.2);
+  background-color: #715aff;
+  color: white;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.not-glow {
+  /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1); */
+  background-color: white;
+  color: black;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.glow-profile-card-div {
+  background-color: #c4b5fd;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.not-glow-profile-card-div {
+  background-color: #e4e4e7;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.gradient {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 10%,
+    white 90%,
+    white 100%
+  );
+}

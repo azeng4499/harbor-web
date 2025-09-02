@@ -1,103 +1,130 @@
+"use client";
+
+import { HatGlasses, ListPlus, Ship } from "lucide-react";
+import Nav from "@/shared-components/nav/nav";
+import HeroCardSection from "./components/hero-card-section/hero-card-section";
+import Story from "./components/story/story";
+import { hindMadurai } from "@/shared-components/fonts/hind-madurai";
+import { montserrat } from "@/shared-components/fonts/montserrat";
+import { poppins } from "@/shared-components/fonts/poppins";
 import Image from "next/image";
+import { GiSailboat } from "react-icons/gi";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="w-screen h-[5000px] bg-white flex flex-col justify-center items-center">
+      <div className="w-full max-w-[1000px] flex justify-start items-center flex-col h-full">
+        <Nav />
+        <h1
+          className={`text-zinc-800 ${montserrat.className} text-[4rem] tracking-tight pt-20`}
+        >
+          Playing ‘hot or not’ is{" "}
+          <span className="underline underline-offset-8">not</span> hot.
+        </h1>
+        <div
+          className={`py-5 ${hindMadurai.className} px-32 text-zinc-500 text-[1.4rem] text-center`}
+        >
+          <span className="text-harbor-blue">Harbor </span>
+          <div className="inline-flex w-6 h-6 rounded-lg bg-harbor-blue flex justify-center items-center">
+            <GiSailboat className="text-white w-4 h-4" />
+          </div>{" "}
+          <span className="text-harbor-blue">is a new kind of dating app</span>{" "}
+          that replaces likes & swipes with ranking to create more geninue
+          matches. Because dating deserves to feel like an experience, and
+          swiping is becoming a chore.
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* <div
+          className={`text-zinc-600 px-32 py-5 text-center ${hindMadurai.className} text-lg`}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          Still <i>doom swiping</i> in 2025? That thumb workout isn't getting
+          you any closer to love. Harbor reimagines how we use dating apps by{" "}
+          <span className="font-bold">replacing swiping with ranking</span>,
+          creating a more natural way to find real matches. It's time we turn
+          dating apps into dating experiences.
+        </div> */}
+        <div
+          className={`flex gap-8 justify-center items-center py-5 text-black text-base ${hindMadurai.className}`}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <button className="flex gap-2 items-center border px-4 py-2 rounded-md">
+            <HatGlasses />
+            Not convinced?
+          </button>
+          <button className="flex gap-2 items-center border px-4 py-2 rounded-md">
+            <ListPlus />
+            Join the Waitlist
+          </button>
+        </div>
+        <HeroCardSection />
+        <Story />
+        <div
+          className={`w-full mt-24 italic ${poppins.className} text-zinc-700 flex flex-col justify-center items-center px-20`}
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          {/* <div className="">How we roll...</div> */}
+          <div
+            className={`${montserrat.className} text-zinc-900 mb-5 text-[2rem] w-full text-start`}
+          >
+            How Harbor Works
+          </div>
+          <div className={` ${hindMadurai.className} w-full text-[1.2rem]`}>
+            When you rank your list, Harbor doesn’t just look for overlap — it
+            looks at how high you placed each other. If you’re both near the top
+            of one another’s lists, you’re far more likely to connect. That way,
+            matches aren’t random; they’re built on genuine mutual interest.
+          </div>
+          <div className="flex w-full flex-row mt-8">
+            <div className="w-1/2 h-[500px] flex flex-col gap-2 relative pr-1">
+              <div className="w-full h-1/2 bg-zinc-100 rounded-lg relative overflow-hidden">
+                <div className="w-full h-full absolute top-0 left-0 flex justify-between items-start p-4 flex-col">
+                  <div className="w-8 h-8 flex justify-center items-center bg-black text-white rounded-full">
+                    1
+                  </div>
+                  <div
+                    className="w-full text-wrap px-2 py-1 rounded-lg shadow-xl z-40"
+                    style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
+                  >
+                    Every morning at 10AM, you’ll get a fresh list of 10 people.
+                  </div>
+                </div>
+                <Image
+                  src="/images/undraw/FIGMA_NEW_MESSAGE.svg"
+                  fill
+                  alt="a"
+                  className="w-full object-fit translate-y-8"
+                />
+              </div>
+              <div className="w-full h-1/2 bg-zinc-100 rounded-lg relative overflow-hidden">
+                <div className="w-full h-full absolute top-0 left-0 flex justify-between items-start p-4 flex-col">
+                  <div className="w-8 h-8 flex justify-center items-center bg-black text-white rounded-full">
+                    3
+                  </div>
+                  <div
+                    className="w-full text-wrap px-2 py-1 rounded-lg shadow-xl z-40"
+                    style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
+                  >
+                    Harbor connects you to someone when your rankings align.{" "}
+                  </div>
+                </div>
+                <Image
+                  src="/images/undraw/FIGMA_LOVE.svg"
+                  fill
+                  alt="b"
+                  className="w-full object-fit translate-y-14 scale-125"
+                />
+              </div>
+            </div>
+
+            <div className="w-1/2 h-[500px] relative pl-1">
+              <div className="w-full h-full bg-zinc-300 rounded-lg">
+                <div className="w-full h-full absolute top-0 left-0 flex justify-start items-start p-4">
+                  <div className="w-8 h-8 flex justify-center items-center bg-black text-white rounded-full">
+                    2
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.story-underline {
+  /* text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #715aff; */
+  color: #52525b;
+  transition: text-decoration 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.not-story-underline {
+  /* text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #fff; */
+  color: #d4d4d8;
+  transition: text-decoration 0.2s ease-in-out, color 0.2s ease-in-out;
+}

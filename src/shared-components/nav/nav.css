@@ -1,0 +1,50 @@
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease-out, width 0.3s ease-out,
+    background-color 0.15s ease-out;
+  width: 60%;
+}
+
+.not-scrolled {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgba(0, 0, 0, 0);
+  transition: width 0.3s ease-out, border 1s ease-out;
+  width: 100%;
+}
+
+.scrolled-button {
+  background-color: #27272a;
+  transition: all 0.3s ease-out;
+  color: white;
+}
+
+.not-scrolled-button {
+  background-color: white;
+  transition: all 0.3s ease-out;
+}
+
+.scrolled-logo {
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.3s ease-out;
+}
+
+.not-scrolled-logo {
+  width: 63px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.3s ease-out;
+}
+
+.scrolled-middle-div {
+  border-left: solid 2px lightgray;
+  transition: all 0.3s ease-in;
+}
+
+.not-scrolled-middle-div {
+  border-left: solid 1px white;
+  transition: all 0.3s ease-in;
+}
