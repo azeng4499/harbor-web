@@ -27,7 +27,7 @@ const Nav = () => {
       >
         <div className={`flex justify-center items-center gap-4`}>
           <div className="w-8 h-8 bg-harbor-blue rounded-md flex justify-center items-center text-white ml-2">
-            <GiSailboat className="w-6 h-6"/>
+            <GiSailboat className="w-6 h-6" />
           </div>
           <span
             className={`${poppins.className} text-lg overflow-hidden logo ${
@@ -37,19 +37,18 @@ const Nav = () => {
             Harbor
           </span>
         </div>
-        <div className="flex-1 h-full flex justify-center items-center py-4">
+        <div className="flex-1 h-full flex justify-center items-center py-4 text-zinc-600">
           <div
-            className={`w-full h-full ${
+            className={`w-full h-full hidden min-[900px]:flex justify-center items-center gap-6 ${
               scrolled ? "scrolled-middle-div" : "not-scrolled-middle-div"
-            }`}
-          ></div>
+            } ${hindMadurai.className}`}
+          >
+            <a href="/">Behind the match</a>
+            <a href="/">FAQ</a>
+            <a href="/">Blog</a>
+          </div>
         </div>
         <div className="flex justify-center items-center gap-4">
-          {/* <button
-            className={`${hindMadurai.className} text-base underline underline-offset-2`}
-          >
-            Careers @ Harbor
-          </button> */}
           <button
             className={`flex justify-center items-center gap-2 text-base py-1 pl-4 pr-3 rounded-full ${
               hindMadurai.className

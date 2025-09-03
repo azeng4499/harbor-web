@@ -4,6 +4,8 @@
   --color-harbor-blue: #715AFF;
   --color-harbor-pink: #ff7e95;
   --color-harbor-green: #3F6634
+  --breakpoint-card: 900px;
+
 }
 
 :root {
