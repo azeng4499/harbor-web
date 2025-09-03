@@ -11,7 +11,7 @@ const Story = () => {
     <div className="w-full h-fit flex items-center flex-col mt-10">
       <div className="w-full">
         <div
-          className={`w-full h-full flex flex-col gap-4 px-4 sm:px-20 md:px-40 pt-5 md:pt-10 text-[1.3rem] ${poppins.className}`}
+          className={`w-full h-full flex flex-col gap-4 px-4 sm:px-20 md:px-40 pt-10 text-[1.3rem] ${poppins.className}`}
         >
           <div
             className={`${montserrat.className} text-zinc-800 mb-0 text-[2rem]`}
@@ -55,12 +55,12 @@ const Story = () => {
                         className="w-fit text-wrap px-2 py-1 rounded-lg shadow-xl z-40"
                         style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
                       >
-                        Get a new list.
+                        Get a new list
                       </div>
                     </div>
                   </div>
                   <Image
-                    src="/images/undraw/FIGMA_NEW_MESSAGE.svg"
+                    src="/images/undraw/FIGMA_NEW_LIST.svg"
                     width={100}
                     height={100}
                     alt="woman getting a notification"
@@ -82,7 +82,7 @@ const Story = () => {
                     </div>
                   </div>
                   <Image
-                    src="/images/undraw/FIGMA_RANK.svg"
+                    src="/images/undraw/FIGMA_RANK_LIST.svg"
                     width={100}
                     height={100}
                     alt="woman ranking"
@@ -107,7 +107,7 @@ const Story = () => {
                         className={`w-fit text-wrap px-2 py-1 rounded-lg shadow-xl z-40 ${montserrat.className} text-black`}
                         style={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}
                       >
-                        Explore your connection.
+                        Explore your connection
                       </div>
                     </div>
                   </div>
@@ -132,6 +132,15 @@ const Story = () => {
                 </div>
               </div>
             </Marker>
+          </div>
+          <div className="w-full text-[1rem] pt-10 text-zinc-500 text-center md:text-start">
+            Have more questions? Visit our{" "}
+            <span className="text-nowrap">
+              <a className="underline" href="/behind-the-match">
+                Behind the match
+              </a>{" "}
+              page.
+            </span>
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function Home() {
       <div className="w-full max-w-[1000px] flex justify-start items-center flex-col h-full">
         <Nav />
         <h1
-          className={`text-zinc-800 ${montserrat.className} text-[4rem] tracking-tight pt-10 md:pt-20 text-center px-4`}
+          className={`text-zinc-800 ${montserrat.className} text-[4rem]/18 md:text-[4rem] tracking-tighter md:tracking-tight pt-5 md:pt-20 text-center px-4`}
         >
           Playing <span className="text-nowrap">‘hot or not’</span> is{" "}
           <span className="text-nowrap">
@@ -30,7 +30,7 @@ export default function Home() {
           </span>
         </h1>
         <div
-          className={`py-5 ${hindMadurai.className} px-5 pt-10 md:px-32 text-zinc-600 text-[1.4rem] text-center`}
+          className={`py-5 ${hindMadurai.className} px-5 pt-10 md:px-32 text-zinc-600 text-[1.2rem] md:text-[1.4rem] text-center`}
         >
           <span className="text-harbor-blue">Harbor </span>
           <div className="inline-flex w-6 h-6 rounded-lg bg-harbor-blue flex justify-center items-center">
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         <HeroCardSection />
         <Story />
-        <div className="w-screen mt-28 overflow-hidden ">
+        <div className="w-screen mt-20 overflow-hidden ">
           <div
             className={`text-[3rem] md:text-[4rem] overflow-hidden ${poppins.className} text-zinc-300 flex justify-center items-center`}
           >
@@ -87,9 +87,12 @@ export default function Home() {
           className={`flex justify-center items-center py-20 ${hindMadurai.className} gap-8 text-[1.1rem] flex-col md:flex-row`}
         >
           Ready to join the waitlist?{" "}
-          <button className="py-2 px-4 bg-zinc-800 rounded-lg text-white flex justify-center items-center gap-2">
+          <a
+            href="/waitlist"
+            className="py-2 px-4 bg-zinc-800 rounded-lg text-white flex justify-center items-center gap-2"
+          >
             Get Started <ArrowRight />
-          </button>
+          </a>
         </div>
         <Footer />
       </div>

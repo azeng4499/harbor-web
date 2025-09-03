@@ -43,19 +43,20 @@ const Nav = () => {
               scrolled ? "scrolled-middle-div" : "not-scrolled-middle-div"
             } ${hindMadurai.className}`}
           >
-            <a href="/">Behind the match</a>
-            <a href="/">FAQ</a>
-            <a href="/">Blog</a>
+            <a href="/behind-the-match">Behind the match</a>
+            <a href="/faq">FAQ</a>
+            <a href="/blog">Blog</a>
           </div>
         </div>
         <div className="flex justify-center items-center gap-4">
-          <button
+          <a
             className={`flex justify-center items-center gap-2 text-base py-1 pl-4 pr-3 rounded-full ${
               hindMadurai.className
             } ${scrolled ? "scrolled-button" : "not-scrolled-button"}`}
+            href="/waitlist"
           >
             Join Waitlist <ListPlus className="w-5 h-5" />
-          </button>
+          </a>
         </div>
       </div>
     </div>

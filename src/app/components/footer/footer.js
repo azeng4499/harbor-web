@@ -6,7 +6,7 @@ import { FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
     <div
-      className={`w-full h-fit ${hindMadurai.className} px-5 mt-10 border-t-2 border-zinc-300`}
+      className={`w-full h-fit ${hindMadurai.className} px-5 mt-10 border-t-2 border-zinc-300 bg-zinc-200 md:bg-white`}
     >
       <div className="w-full h-full flex flex-col">
         <div className="w-full flex-1 flex justify-between items-center pt-5 pb-10">
