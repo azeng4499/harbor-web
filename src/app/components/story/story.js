@@ -8,13 +8,13 @@ const Story = () => {
   const [scolledTo, setScrolledTo] = useState(0);
 
   return (
-    <div className="w-full h-fit flex items-center flex-col mt-10">
+    <div className="w-full h-fit flex items-center flex-col mt-0 md:mt-10">
       <div className="w-full">
         <div
-          className={`w-full h-full flex flex-col gap-4 px-4 sm:px-20 md:px-40 pt-10 text-[1.3rem] ${poppins.className}`}
+          className={`w-full h-full flex flex-col gap-4 px-6 sm:px-20 md:px-40 pt-10 text-[1.3rem] ${poppins.className}`}
         >
           <div
-            className={`${montserrat.className} text-zinc-800 mb-0 text-[2rem]`}
+            className={`${montserrat.className} text-zinc-800 mb-0 text-[1.8rem] md:text-[2rem]`}
           >
             A new way to match
           </div>
@@ -26,7 +26,7 @@ const Story = () => {
           >
             <div className="text-zinc-600">
               Harbor gives you a daily list of people to rank. Matches are made
-              based on mutual interest; The higher you and someone rank each
+              based on mutual interest—the higher you and someone rank each
               other, the more likely you’ll match!
             </div>
           </Marker>
@@ -37,7 +37,7 @@ const Story = () => {
               onScrollPastUp={() => setScrolledTo(1)}
             >
               <div className={`w-full h-1/2 flex flex-row pb-1`}>
-                <div className="w-1/2 h-full bg-zinc-100 mr-1 rounded-lg relative overflow-hidden flex justify-center items-center">
+                <div className="w-1/2 h-full bg-zinc-50 mr-1 rounded-lg relative overflow-hidden flex justify-center items-center">
                   <div className="w-full h-full absolute top-0 left-0 flex justify-between items-start p-4 flex-col">
                     <div className="w-8 h-8 flex justify-center items-center bg-black text-white rounded-full">
                       1
@@ -60,14 +60,14 @@ const Story = () => {
                     </div>
                   </div>
                   <Image
-                    src="/images/undraw/FIGMA_NEW_LIST.svg"
+                    src="/images/undraw/FIGMA_NEW_MESSAGE.svg"
                     width={100}
                     height={100}
                     alt="woman getting a notification"
                     className="h-full translate-y-8 min-w-[330px]"
                   />
                 </div>
-                <div className="w-1/2 h-full bg-zinc-100 ml-1 rounded-lg relative overflow-hidden flex justify-center items-center">
+                <div className="w-1/2 h-full bg-zinc-50 ml-1 rounded-lg relative overflow-hidden flex justify-center items-center">
                   <div className="w-full h-full absolute top-0 left-0 flex justify-between items-start p-4 flex-col">
                     <div className="w-8 h-8 flex justify-center items-center bg-black text-white rounded-full">
                       2
@@ -82,11 +82,11 @@ const Story = () => {
                     </div>
                   </div>
                   <Image
-                    src="/images/undraw/FIGMA_RANK_LIST.svg"
+                    src="/images/undraw/FIGMA_RANK.svg"
                     width={100}
                     height={100}
                     alt="woman ranking"
-                    className="h-full translate-x-6 md:translate-x-0 translate-y-10 min-w-[330px]"
+                    className="h-full translate-x-10 md:translate-x-0 translate-y-10 min-w-[330px]"
                   />
                 </div>
               </div>
@@ -97,7 +97,7 @@ const Story = () => {
               onScrollPastUp={() => setScrolledTo(0)}
             >
               <div className="w-full h-1/2 pt-1">
-                <div className="w-full h-full bg-zinc-100 rounded-lg overflow-hidden flex flex-row relative">
+                <div className="w-full h-full bg-zinc-50 rounded-lg overflow-hidden flex flex-row relative">
                   <div className="w-full h-full absolute top-0 left-0 flex justify-between items-start p-4 flex-col z-40">
                     <div className="w-8 h-8 flex justify-center items-center bg-black text-white rounded-full">
                       3
@@ -133,11 +133,11 @@ const Story = () => {
               </div>
             </Marker>
           </div>
-          <div className="w-full text-[1rem] pt-10 text-zinc-500 text-center md:text-start">
+          <div className="w-full text-[1rem] pt-5 text-zinc-500 text-center md:text-start">
             Have more questions? Visit our{" "}
             <span className="text-nowrap">
-              <a className="underline" href="/behind-the-match">
-                Behind the match
+              <a className="underline" href="/faq">
+                FAQ
               </a>{" "}
               page.
             </span>

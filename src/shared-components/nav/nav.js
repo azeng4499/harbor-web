@@ -25,7 +25,7 @@ const Nav = () => {
           scrolled ? "scrolled shadow-xl" : "not-scrolled"
         }`}
       >
-        <div className={`flex justify-center items-center gap-4`}>
+        <a href="/" className={`flex justify-center items-center gap-4`}>
           <div className="w-8 h-8 bg-harbor-blue rounded-md flex justify-center items-center text-white ml-2">
             <GiSailboat className="w-6 h-6" />
           </div>
@@ -36,16 +36,16 @@ const Nav = () => {
           >
             Harbor
           </span>
-        </div>
+        </a>
         <div className="flex-1 h-full flex justify-center items-center py-4 text-zinc-600">
           <div
             className={`w-full h-full hidden min-[900px]:flex justify-center items-center gap-6 ${
               scrolled ? "scrolled-middle-div" : "not-scrolled-middle-div"
             } ${hindMadurai.className}`}
           >
-            <a href="/behind-the-match">Behind the match</a>
+            <a href="/behind-the-match">Behind the Match</a>
             <a href="/faq">FAQ</a>
-            <a href="/blog">Blog</a>
+            <a href="mailto:aaronz2003@gmail.com">Contact</a>
           </div>
         </div>
         <div className="flex justify-center items-center gap-4">

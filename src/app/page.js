@@ -22,7 +22,7 @@ export default function Home() {
       <div className="w-full max-w-[1000px] flex justify-start items-center flex-col h-full">
         <Nav />
         <h1
-          className={`text-zinc-800 ${montserrat.className} text-[4rem]/18 md:text-[4rem] tracking-tighter md:tracking-tight pt-5 md:pt-20 text-center px-4`}
+          className={`text-zinc-800 ${montserrat.className} text-[4rem]/18 md:text-[4rem] tracking-tighter md:tracking-tight pt-10 md:pt-20 text-center px-4`}
         >
           Playing <span className="text-nowrap">‘hot or not’</span> is{" "}
           <span className="text-nowrap">
@@ -50,13 +50,19 @@ export default function Home() {
         <div
           className={`flex gap-4 md:gap-8 justify-center items-center py-5 text-black text-base ${hindMadurai.className}`}
         >
-          <button className="flex gap-2 items-center border px-4 py-2 rounded-md">
+          <a
+            href="/behind-the-match"
+            className="flex gap-2 items-center border px-4 py-2 rounded-md shadow-lg cursor-pointer"
+          >
             Tell me more <HatGlasses />
-          </button>
-          <button className="flex gap-2 items-center border px-4 py-2 rounded-md">
+          </a>
+          <a
+            href="/waitlist"
+            className="flex gap-2 items-center border px-4 py-2 rounded-md shadow-lg cursor-pointer"
+          >
             Join the Waitlist
             <FaGrinHearts />
-          </button>
+          </a>
         </div>
         <HeroCardSection />
         <Story />
@@ -76,23 +82,29 @@ export default function Home() {
           >
             <div className="text-nowrap">
               RANK! RANK!{" "}
-              <span style={{ color: "rgba(113, 90, 255, 1)" }}>
-                RANK! RANK! RANK!
-              </span>{" "}
-              RANK! RANK!
+              <span className="text-harbor-blue">RANK! RANK! RANK!</span> RANK!
+              RANK!
             </div>
           </div>
         </div>
-        <div
-          className={`flex justify-center items-center py-20 ${hindMadurai.className} gap-8 text-[1.1rem] flex-col md:flex-row`}
-        >
-          Ready to join the waitlist?{" "}
-          <a
-            href="/waitlist"
-            className="py-2 px-4 bg-zinc-800 rounded-lg text-white flex justify-center items-center gap-2"
-          >
-            Get Started <ArrowRight />
-          </a>
+        <div className="w-full px-6 sm:px-20 md:px-40">
+          <div className="mt-20 mb-12 p-6 bg-gray-50 rounded-lg">
+            <h3
+              className={`text-xl font-semibold text-zinc-900 mb-3 ${montserrat.className}`}
+            >
+              Ready to Find Your Match?
+            </h3>
+            <p className={`text-zinc-500 mb-4 ${hindMadurai.className}`}>
+              Join the waitlist to be the first to know when Harbor becomes
+              available in your area.
+            </p>
+            <a
+              href="/waitlist"
+              className={`w-fit bg-harbor-blue hover:bg-harbor-blue-secondary flex justify-center items-center gap-2 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 ${hindMadurai.className}`}
+            >
+              Get Started Today <ArrowRight />
+            </a>
+          </div>
         </div>
         <Footer />
       </div>

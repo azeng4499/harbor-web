@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  --color-harbor-blue-lite: #A799FF;
+  --color-harbor-blue-secondary: #8370FF;
   --color-harbor-blue: #715AFF;
   --color-harbor-pink: #ff7e95;
   --color-harbor-green: #3F6634
