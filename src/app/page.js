@@ -11,10 +11,11 @@ import {
 import { GiSailboat } from "react-icons/gi";
 import { FaGrinHearts } from "react-icons/fa";
 import { poppins } from "@/shared-components/fonts/poppins";
-import { ArrowRight, HatGlasses } from "lucide-react";
+import { HatGlasses } from "lucide-react";
 import { FaHeart } from "react-icons/fa6";
 import { MdSwipeRight } from "react-icons/md";
 import Footer from "./components/footer/footer";
+import CallToActionButton from "@/shared-components/call-to-action-button/call-to-action-button";
 
 export default function Home() {
   return (
@@ -88,23 +89,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full px-6 sm:px-20 md:px-40">
-          <div className="mt-20 mb-12 p-6 bg-gray-50 rounded-lg">
-            <h3
-              className={`text-xl font-semibold text-zinc-900 mb-3 ${montserrat.className}`}
-            >
-              Ready to Find Your Match?
-            </h3>
-            <p className={`text-zinc-500 mb-4 ${hindMadurai.className}`}>
-              Join the waitlist to be the first to know when Harbor becomes
-              available in your area.
-            </p>
-            <a
-              href="/waitlist"
-              className={`w-fit bg-harbor-blue hover:bg-harbor-blue-secondary flex justify-center items-center gap-2 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 ${hindMadurai.className}`}
-            >
-              Get Started Today <ArrowRight />
-            </a>
-          </div>
+          <CallToActionButton />
         </div>
         <Footer />
       </div>

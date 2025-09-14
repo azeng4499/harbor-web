@@ -65,3 +65,44 @@
   border-left: solid 1px white;
   transition: all 0.3s ease-in;
 }
+
+/* Mobile menu transitions */
+.mobile-menu-container {
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-enter {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.mobile-menu-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.mobile-menu-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mobile-menu-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Icon rotation transitions */
+.icon-rotate {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-rotate-enter {
+  transform: rotate(0deg);
+}
+
+.icon-rotate-enter-active {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}

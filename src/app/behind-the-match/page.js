@@ -3,8 +3,8 @@ import Footer from "../components/footer/footer";
 import { montserrat } from "@/shared-components/fonts/montserrat";
 import { hindMadurai } from "@/shared-components/fonts/hind-madurai";
 import { poppins } from "@/shared-components/fonts/poppins";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import CallToActionButton from "@/shared-components/call-to-action-button/call-to-action-button";
 
 const Page = () => {
   return (
@@ -43,7 +43,7 @@ const Page = () => {
               <p
                 className={`text-lg sm:text-xl text-zinc-500 leading-relaxed mb-6 ${poppins.className}`}
               >
-                Harbor is a new kind of dating experience, built for people who
+                Harbor is a new online dating experience, built for people who
                 are tired of endless swiping and ghosted matches. We believe in
                 a simple idea: <i>quality beats quantity</i>, and that starts
                 with saying goodbye to swipes and likes.
@@ -66,10 +66,9 @@ const Page = () => {
                 className={`text-zinc-500 leading-relaxed mb-6 ${hindMadurai.className} text-lg`}
               >
                 That’s why the heart of Harbor is ranking. Unlike swiping,
-                ranking removes empty yes/no decisions and encourages you to
-                slow down, compare, and reflect on who truly stands out. This
-                process naturally restores intentionality; every match carries
-                more weight because it begins with real consideration.
+                ranking removes quick &quot;yes/no&quot; decisions and
+                encourages you to slow down, compare, and reflect on who truly
+                stands out to you.
               </p>
 
               <h2
@@ -81,35 +80,34 @@ const Page = () => {
               <p
                 className={`text-zinc-500 leading-relaxed mb-3 ${hindMadurai.className} text-lg`}
               >
-                Each day, you’re placed into a small group (or cohort) of 10
-                people. From there, you rank everyone in your cohort based on
-                who stands out to you the most compared to the others.
+                Each day, you’ll be shown 10 people and asked to rank them based
+                on who stands out to you the most. Remember, they’ll rank you
+                too.
               </p>
               <p
                 className={`text-zinc-500 leading-relaxed mb-3 ${hindMadurai.className} text-lg`}
               >
                 To turn those rankings into matches, Harbor uses the{" "}
                 <i>Gale–Shapley</i> algorithm, a proven method that’s been used
-                for decades to solve real-world matching problems (like pairing
-                medical students with hospitals). What makes it powerful is that
-                it always produces stable matches: if two people rank each other
-                highly, they’ll be paired, and no one gets stuck in a one-sided
-                match.
+                for decades to solve other real-world matching problems. Put
+                simply, it’s a method of pairing people so that when matches
+                happen, they’re mutual and stable rather than one-sided.
               </p>
               <p
                 className={`text-zinc-500 leading-relaxed mb-3 ${hindMadurai.className} text-lg`}
               >
-                To create cohorts, Harbor employs AI to balance groups based on
-                compatibility signals like shared interests, values, and
-                communication styles. This ensures that the people you rank are
-                genuinely worth considering.
+                The people you see each day aren’t random. Harbor uses AI models
+                to analyze compatibility signals (like shared interests, values,
+                and communication patterns) and selects the 10 people you’re
+                most likely to connect with.
               </p>
-              <p
+              {/* <p
                 className={`text-zinc-500 leading-relaxed mb-3 ${hindMadurai.className} text-lg`}
               >
-                Together, the AI-driven cohorts and <i>Gale–Shapley</i> matching
-                ensure Harbor feels fair, balanced, and intentional.
-              </p>
+                Together, AI curation and <i>Gale–Shapley</i> matching create a
+                dating rhythm that feels fair, intentional, and built for real
+                connection.
+              </p> */}
 
               <blockquote
                 className="border-l-4 border-harbor-blue pl-6 py-4 my-8 rounded-r-lg"
@@ -138,31 +136,14 @@ const Page = () => {
                 className={`text-zinc-500 leading-relaxed mb-6 ${hindMadurai.className} text-lg`}
               >
                 Harbor is still pre-launch, but we’re building fast. As we
-                continue developing our matching system and refining the
-                experience, we’re also listening closely to people like you who
-                want something better than the status quo. If you’re ready for a
-                dating app that puts quality first, we’d love for you to join
-                our waitlist. Together, we can shape a platform that helps real
-                relationships flourish.
+                continue to develop and refine the experience, we’re listening
+                closely to people like you who want something better than the
+                status quo. If you’re ready for a dating app that puts quality
+                first, we’d love for you to join our waitlist. Together, we can
+                shape a platform that helps real relationships flourish.
               </p>
 
-              <div className="mt-12 p-6 bg-gray-50 rounded-lg">
-                <h3
-                  className={`text-xl font-semibold text-zinc-900 mb-3 ${montserrat.className}`}
-                >
-                  Ready to Find Your Match?
-                </h3>
-                <p className={`text-zinc-500 mb-4 ${hindMadurai.className}`}>
-                  Join the waitlist to be the first to know when Harbor becomes
-                  available in your area.
-                </p>
-                <a
-                  href="/waitlist"
-                  className={`w-fit bg-harbor-blue hover:bg-harbor-blue-secondary flex justify-center items-center gap-2 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 ${hindMadurai.className}`}
-                >
-                  Get Started Today <ArrowRight />
-                </a>
-              </div>
+              <CallToActionButton />
             </div>
           </article>
         </main>
