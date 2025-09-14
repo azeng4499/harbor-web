@@ -6,6 +6,7 @@ import { ListPlus } from "lucide-react";
 import { hindMadurai } from "../fonts/hind-madurai";
 import { poppins } from "../fonts/poppins";
 import { GiSailboat } from "react-icons/gi";
+import Link from "next/link";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +26,7 @@ const Nav = () => {
           scrolled ? "scrolled shadow-xl" : "not-scrolled"
         }`}
       >
-        <a href="/" className={`flex justify-center items-center gap-4`}>
+        <Link href="/" className={`flex justify-center items-center gap-4`}>
           <div className="w-8 h-8 bg-harbor-blue rounded-md flex justify-center items-center text-white ml-2">
             <GiSailboat className="w-6 h-6" />
           </div>
@@ -36,27 +37,27 @@ const Nav = () => {
           >
             Harbor
           </span>
-        </a>
+        </Link>
         <div className="flex-1 h-full flex justify-center items-center py-4 text-zinc-600">
           <div
             className={`w-full h-full hidden min-[900px]:flex justify-center items-center gap-6 ${
               scrolled ? "scrolled-middle-div" : "not-scrolled-middle-div"
             } ${hindMadurai.className}`}
           >
-            <a href="/behind-the-match">Behind the Match</a>
-            <a href="/faq">FAQ</a>
-            <a href="mailto:aaronz2003@gmail.com">Contact</a>
+            <Link href="/behind-the-match">Behind the Match</Link>
+            <Link href="/faq">FAQ</Link>
+            <Link href="mailto:aaronz2003@gmail.com">Contact</Link>
           </div>
         </div>
         <div className="flex justify-center items-center gap-4">
-          <a
+          <Link
             className={`flex justify-center items-center gap-2 text-base py-1 pl-4 pr-3 rounded-full ${
               hindMadurai.className
             } ${scrolled ? "scrolled-button" : "not-scrolled-button"}`}
             href="/waitlist"
           >
             Join Waitlist <ListPlus className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

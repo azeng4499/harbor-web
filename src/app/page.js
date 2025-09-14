@@ -71,9 +71,9 @@ export default function Home() {
             className={`text-[3rem] md:text-[4rem] overflow-hidden ${poppins.className} text-zinc-300 flex justify-center items-center`}
           >
             <div className="text-nowrap">
-              IT'S TIME TO IT'S TIME TO{" "}
-              <span className="text-zinc-500">IT'S TIME TO</span> IT'S TIME TO
-              IT'S TIME TO
+              IT&apos;S TIME TO IT&apos;S TIME TO{" "}
+              <span className="text-zinc-500">IT&apos;S TIME TO</span> IT&apos;S
+              TIME TO IT&apos;S TIME TO
             </div>
           </div>
           <div

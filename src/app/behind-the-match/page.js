@@ -4,6 +4,7 @@ import { montserrat } from "@/shared-components/fonts/montserrat";
 import { hindMadurai } from "@/shared-components/fonts/hind-madurai";
 import { poppins } from "@/shared-components/fonts/poppins";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const Page = () => {
   return (
@@ -28,11 +29,12 @@ const Page = () => {
             </header>
 
             <div className="mb-8 sm:mb-12">
-              <div className="w-full h-64 sm:h-80 lg:h-96 rounded-lg overflow-hidden">
-                <img
+              <div className="w-full h-64 sm:h-80 lg:h-96 rounded-lg overflow-hidden relative">
+                <Image
                   src="/images/undraw/FIGMA_BEHIND_THE_MATCH.png"
                   alt="Behind the Match - Harbor's Vision"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -57,8 +59,8 @@ const Page = () => {
               >
                 Traditional dating apps promised to make meeting people easier,
                 yet somehow, they seem to spark fewer real relationships than
-                the days before apps even existed. It's time we deliver on the
-                original promise by restoring intentionality to dating apps.
+                the days before apps even existed. It&apos;s time we deliver on
+                the original promise by restoring intentionality to dating apps.
               </p>
               <p
                 className={`text-zinc-500 leading-relaxed mb-6 ${hindMadurai.className} text-lg`}
@@ -116,9 +118,9 @@ const Page = () => {
                 <p
                   className={`text-lg italic text-zinc-900 ${poppins.className}`}
                 >
-                  "Technology should enhance human connection, not replace it.
-                  Harbor is designed to be the bridge that brings people
-                  together in meaningful ways."
+                  &quot;Technology should enhance human connection, not replace
+                  it. Harbor is designed to be the bridge that brings people
+                  together in meaningful ways.&quot;
                 </p>
                 <cite
                   className={`text-base text-zinc-500 mt-2 block ${hindMadurai.className}`}
