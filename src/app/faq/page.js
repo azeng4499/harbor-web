@@ -83,8 +83,8 @@ const Page = () => {
               <p
                 className={`text-base md:text-lg px-8 md:px-0 sm:text-xl text-zinc-500 ${poppins.className} max-w-2xl`}
               >
-                Everything you need to know about Harbor's unique approach to
-                online dating
+                Everything you need to know about Harbor&apos;s unique approach
+                to online dating
               </p>
             </header>
 
